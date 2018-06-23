@@ -9,22 +9,31 @@
 </head>
 <body>
     <div class="site-content">
-        <div class="input-box">
-            <div class="input-group">
-                <label for="">Количество периодов</label>
-                <input type="text" name="periods" id="periods">
+        <div class="wrapper">
+            <div class="left-bar">
+                <div class="input-box">
+                    <div class="input-group">
+                        <label for="">Количество периодов</label>
+                        <input type="text" name="periods" id="periods">
+                    </div>
+                    <div class="input-group">
+                        <label for="">Сумма</label>
+                        <input type="text" name="sum" id="sum">
+                    </div>
+                    <div class="btn-box">
+                        <button class="btn" id="calculate">Calculate</button>
+                    </div>
+                    
+                </div>
             </div>
-            <div class="input-group">
-                <label for="">Сумма</label>
-                <input type="text" name="sum" id="sum">
-            </div>
-            <div class="btn-box">
-                <button id="calculate">Calculate</button>
-            </div>
-            <div class="result" id="result">
-                
+            <div class="right-bar">
+                <div class="result" id="result">
+                    
+                </div>
             </div>
         </div>
+        
+        
     </div>
     <script src="js/main.js"></script>
 </body>

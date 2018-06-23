@@ -9,15 +9,14 @@
     var result = [];
 
     // event listeners
-
     calculate.addEventListener('click', calculatAccounting)
-    periods.addEventListener('keyup', changePeriodState);
-    sum    .addEventListener('keyup', changeSumState);
+    periods  .addEventListener('keyup', changePeriodState);
+    sum      .addEventListener('keyup', changeSumState);
     
-
     function changePeriodState(e) {
         periodState = parseInt(this.value);
     }
+
     function changeSumState(e) {
         sumState =    parseInt(this.value);
     }
@@ -64,6 +63,5 @@
         }
 
         console.log(sum);
-
     }
 })();

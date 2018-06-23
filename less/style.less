@@ -4,8 +4,39 @@ html, body, h1, h2, h3, h4, h5, h6, a, p, ul, li  {
     font-size: 13px;
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
-    
+    font-family: sans-serif;    
+}
+
+html {
+    min-height: 100vh;
+    background: #ecf0f1;
+}
+
+* {
+    outline: none;
+}
+
+.btn {
+    background: #2980b9;
+    padding: 12px 20px;
+    border: 0;
+    border-radius: 3px;
+    color: #ecf0f1;
+    font-weight: bold;
+}
+
+.input-group {
+    label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+        color: #2c3e50;
+    }
+    input {
+        display: block;        
+        margin-bottom: 30px;
+        padding: 12px 20px;
+    }
 }
 
 .site-content {
@@ -27,5 +58,35 @@ html, body, h1, h2, h3, h4, h5, h6, a, p, ul, li  {
                 transform: translateY(-50%); 
             }
         }
+    }
+}
+
+
+.wrapper {
+    max-width: 1200px;
+    display: block;
+    margin: 0 auto;
+}
+
+.left-bar {
+    width: 50%;
+    float: left;
+    padding-top: 50vh;
+    transform: translteY(-50%);
+}
+
+.right-bar {
+    width: 50%;
+    float: left;    
+    overflow: scroll;
+    max-height: 100vh;
+
+    &::-webkit-scrollbar {
+        width: 0px;
+    }
+    
+    .result {
+        padding-top: 50vh;
+        padding-bottom: 50vh;
     }
 }

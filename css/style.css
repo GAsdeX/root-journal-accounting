@@ -15,6 +15,32 @@ li {
   padding: 0;
   font-family: sans-serif;
 }
+html {
+  min-height: 100vh;
+  background: #ecf0f1;
+}
+* {
+  outline: none;
+}
+.btn {
+  background: #2980b9;
+  padding: 12px 20px;
+  border: 0;
+  border-radius: 3px;
+  color: #ecf0f1;
+  font-weight: bold;
+}
+.input-group label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+.input-group input {
+  display: block;
+  margin-bottom: 30px;
+  padding: 12px 20px;
+}
 .site-content .result p {
   padding-left: 20px;
   margin: 10px 0;
@@ -30,4 +56,28 @@ li {
   top: 50%;
   left: 10px;
   transform: translateY(-50%);
+}
+.wrapper {
+  max-width: 1200px;
+  display: block;
+  margin: 0 auto;
+}
+.left-bar {
+  width: 50%;
+  float: left;
+  padding-top: 50vh;
+  transform: translteY(-50%);
+}
+.right-bar {
+  width: 50%;
+  float: left;
+  overflow: scroll;
+  max-height: 100vh;
+}
+.right-bar::-webkit-scrollbar {
+  width: 0px;
+}
+.right-bar .result {
+  padding-top: 50vh;
+  padding-bottom: 50vh;
 }
